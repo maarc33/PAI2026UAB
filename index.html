@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telecomunicacions</title>
+  <style>
+    :root {
+      --blau: #123b5d;
+      --blau-clar: #e7f3f8;
+      --taronja: #e87532;
+      --text: #20313d;
+      --fons: #f7fafb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--fons);
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 1.5rem;
+      color: white;
+      text-align: center;
+      background: var(--blau);
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    main {
+      width: min(100% - 2rem, 1050px);
+      margin: 2rem auto;
+    }
+
+    .introduccio {
+      max-width: 760px;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+
+    .introduccio h2 {
+      color: var(--blau);
+    }
+
+    .temes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .tema {
+      padding: 1.5rem;
+      background: white;
+      border-top: 4px solid var(--taronja);
+      box-shadow: 0 4px 14px rgba(18, 59, 93, 0.1);
+    }
+
+    .tema h3 {
+      margin-top: 0;
+      color: var(--blau);
+    }
+
+    .frase {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      color: var(--blau);
+      text-align: center;
+      background: var(--blau-clar);
+      border-left: 5px solid var(--taronja);
+      font-size: 1.15rem;
+    }
+
+    footer {
+      padding: 1.5rem;
+      color: white;
+      text-align: center;
+      background: var(--blau);
+    }
+
+    @media (max-width: 700px) {
+      .temes {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Telecomunicacions</h1>
+    <p>Connectant persones, dispositius i informació</p>
+  </header>
+
+  <main>
+    <section class="introduccio">
+      <h2>Què són les telecomunicacions?</h2>
+      <p>
+        Les telecomunicacions són el conjunt de tecnologies que permeten transmetre
+        informació a distància. Gràcies a elles podem parlar, enviar missatges,
+        compartir arxius i accedir a Internet des de gairebé qualsevol lloc.
+      </p>
+    </section>
+
+    <section class="temes" aria-label="Àmbits de les telecomunicacions">
+      <article class="tema">
+        <h3>Telefonia mòbil</h3>
+        <p>
+          Les xarxes mòbils connecten telèfons i altres dispositius mitjançant
+          antenes. Les generacions 4G i 5G ofereixen més velocitat i menor latència.
+        </p>
+      </article>
+
+      <article class="tema">
+        <h3>Fibra òptica</h3>
+        <p>
+          La fibra òptica transmet dades en forma de llum. És ràpida, estable i
+          permet transportar grans quantitats d'informació a llargues distàncies.
+        </p>
+      </article>
+
+      <article class="tema">
+        <h3>Internet de les coses</h3>
+        <p>
+          L'Internet de les coses connecta objectes quotidians, com sensors,
+          vehicles i electrodomèstics, perquè puguin intercanviar dades.
+        </p>
+      </article>
+    </section>
+
+    <p class="frase">
+      Una bona comunicació redueix distàncies i obre noves oportunitats.
+    </p>
+  </main>
+
+  <footer>
+    <p>Pàgina educativa sobre telecomunicacions · PAI2026UAB</p>
+  </footer>
+</body>
+</html>
