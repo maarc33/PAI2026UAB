@@ -13,6 +13,11 @@ align-items: center; /* Alinear verticalmente */
 padding: 10px; /* Espaciado interno */
 }
 
+.cabecera a {
+    text-decoration: none; /* Quitar subrayado */
+    color: #000000; /* Mantener el color del texto */
+}
+
 .title {
     font-family: 'Cinzel', serif;
     font-weight: 700; /* Grosor de la letra */
@@ -118,6 +123,12 @@ padding: 10px; /* Espaciado interno */
     border-radius: 20px; 
 }
 
+.trioimagenes a {
+    width: 100%;
+    max-width: 500px;
+    display: block; /* Para que el enlace ocupe todo el ancho de la imagen */
+}
+
 .horizontales2 {
     display: flex;
     flex-direction: column; 
@@ -131,4 +142,73 @@ padding: 10px; /* Espaciado interno */
     max-height: 250px;  
     display: block;
     border-radius: 20px; 
+}
+
+/* General para la imagen de portada de la página de cada película */
+.CajaPortadasPelis img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    display: block;
+}
+
+/* Formato de la página de Hoppers */
+.pagina-hoppers {
+    background-color: #000000;
+    color: aliceblue;
+}
+
+.pagina-hoppers .cabecera {
+    background-color: #000000;
+}
+
+.pagina-hoppers .cabecera .title, .pagina-hoppers .cabecera a {
+    color:aliceblue;
+}
+
+.CajaPortadasPelis {
+    width: 100%; /* Para que ocupe todo el ancho de la pantalla */
+}
+
+/* Contenedor principal donde estarán los otros dos contenedores (columna imágenes y columan texto) */
+.cuerpohoppers {
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+    align-items: flex-start;
+    width: 100%; 
+}
+
+/* Columna/Contenedor donde estarán las imagenes */
+.columnaimageneshoppers {
+    display: flex;
+    flex-direction:column;
+    gap: 19px;
+    width: 35%;
+}   
+.columnaimageneshoppers img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 12px;
+}
+
+/* Columna/Contenedor donde estará el resumen de la película */
+.columnatextohoppers {
+    width: 65%;
+    flex: 1;
+    text-align: center;
+}
+.columnatextohoppers h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 600; /* Grosor de la letra */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    margin-top: 0; /* Elimina el margen superior para alinearse con la imagen de la columna izquierda */
+    color:darkgoldenrod;
+}
+
+.columnatextohoppers p {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif
 }
