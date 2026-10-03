@@ -1,0 +1,134 @@
+*{box-sizing: border-box; /* Para que el padding y el borde se incluyan en el ancho y alto total del elemento */
+}
+
+body {
+    margin: 0;
+}
+
+/* Alinear el título a la izquierda y el div a la derecha */
+.cabecera {
+display: flex;
+justify-content: space-between; /* Espacio entre elementos */
+align-items: center; /* Alinear verticalmente */
+padding: 10px; /* Espaciado interno */
+}
+
+.title {
+    font-family: 'Cinzel', serif;
+    font-weight: 700; /* Grosor de la letra */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+}
+
+/* Colocar las etiquetas <a> en línea y con un margen a la derecha */
+.menucabecera {
+    display: flex;
+    gap: 15px; /* Espacio entre enlaces */
+}
+
+/*Quitar el subrallado y dar formato a la cabecera derecha*/
+.menucabecera a {
+    text-decoration: none; /* Quitar subrayado */
+    color: #333; /* Color del texto negro */
+    font-family: 'Cinzel', serif; /* Fuente misma que Pixar */
+    font-weight: bold; /* Grosor de la letra o ponerla en negrita */
+
+}
+
+/*Formato individual o no para cada imagen*/
+.cajaportada {
+    width: 100%; /*Para ocupar todo el ancho de la pantalla */
+}
+
+.cajaportada img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Contenedo principal para las imagenes de las películas*/
+.cajapeliculas1 {
+    display: flex; /*Para que las cajas individuales se puedan colocar en filas*/
+    justify-content: center; /*Para que todo quede centrado*/
+    gap: 20px; /*Distancia entre cajas*/
+    padding: 20px; /*Espacio interno*/
+}
+
+.cajapeliculas1 img {
+    width: 100%; /*Ancho que ocupará (todo el disponible) */
+    max-width: 233px; /*Máximo 233 px de ancho, pero si la caja se hace más pequeña, podrá encogerse */
+    height: auto;
+    border-radius: 20px; /*Para redondear los bordes de las imagenes*/
+}
+
+/* La 2a caja de películas (general) para ordenar las cajas una debajo de la otra*/
+.cajapeliculas2 {
+    display: flex;
+    flex-direction: column; /* Para que las cajas se coloquen una debajo de la otra */
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Caja contenedora de las 2 imagenes horizontales de la 2a caja de películas */
+.horizontales1 {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    width: 100%;
+}
+
+/*Formato individual de las 2 imagenes horizontales de la 2a caja de películas */
+.horizontales1 img {
+    width: 100%;
+    height: auto; /* Altura fija para las imágenes horizontales */
+    max-height: 400px;  
+    display: block;
+    border-radius: 20px; /* Para redondear los bordes de las imágenes */
+}
+
+.cuartetoimagenes {
+    display: flex;
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+    width: 100%;
+}
+
+.cuartetoimagenes img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto;
+    max-height: 200px; 
+    border-radius: 20px; 
+}
+
+.trioimagenes {
+    display: flex;
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+    width: 100%;
+}
+
+.trioimagenes img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+    max-height: 500px; 
+    border-radius: 20px; 
+}
+
+.horizontales2 {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    width: 100%;
+}
+
+.horizontales2 img {
+    width: 100%;
+    height: auto; 
+    max-height: 250px;  
+    display: block;
+    border-radius: 20px; 
+}
