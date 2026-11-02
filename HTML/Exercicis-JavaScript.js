@@ -39,3 +39,22 @@ if (num2>num1) {
 else if (num1==num2) {
     console.log("els números són iguals")
 }
+
+// Exercici 13.5
+// Pedir tres números al usuario 
+num1 = Number (prompt("Introdueix un número: "));
+num2 = Number (prompt("introdueix un altre número: "));
+let num3 = Number (prompt("Introdueix un número més: "));
+if (num1>num2 && num1>num3) {
+    console.log("el número més gran és: " +num1)
+}
+if (num2>num1 && num2>num3) {
+    console.log("el número més gran és: " +num2)
+}
+if (num3>num1 && num3>num2) {
+    console.log ("el número més gran és: " +num3)
+}
+else if (num1==num2==num3) {
+    console.log("els números són iguals")
+}
+    
