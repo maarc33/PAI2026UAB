@@ -57,4 +57,5 @@ if (num3>num1 && num3>num2) {
 else if (num1==num2==num3) {
     console.log("els números són iguals")
 }
-    
+
+// Exercicis amb Arrays 
