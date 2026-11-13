@@ -19,3 +19,18 @@ taula[1] = ", ";
 
 // Mostrem el contingut de la taula
 console.log(taula);
+
+// Aquest programa suma dos elements de la taula i guarda el resultat a la posició 6.
+
+// Definim una taula amb els elements indicats
+
+taula = [23, 45, 98, 73];
+
+// Sumem els elements de les posicions 0 i 2
+console.log(taula[0] + taula[2]);
+
+// Guardem la suma a la posició 6
+taula[6] = taula[0] + taula[2];
+
+// Mostrem el contingut de la taula
+console.log(taula);
